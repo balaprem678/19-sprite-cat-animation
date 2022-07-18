@@ -1,0 +1,45 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  position: relative;
+  width: 400px;
+  height: 250px;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.images{
+  position: relative;
+  width: 800px;
+  height: 250px;
+  animation: catwalk 8s infinite steps(8);
+  transform: translateX(0px);
+}
+@keyframes catwalk {
+  100%{
+    transform: translateX(-3200px);
+  }
+}
+#img-1{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#img-2{
+  position: absolute;
+  top: -250px;
+  left: 800px;
+}
+#img-3{
+  position: absolute;
+  top: -500px;
+  left: 1600px;
+}
+#img-4{
+  position: absolute;
+  top: -750px;
+  left: 2400px;
+}
